@@ -1,0 +1,16 @@
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+
+nse:
+  base_url: https://archives.nseindia.com/content/historical/DERIVATIVES
+  timeout_seconds: 30
+  retries: 3
+
+database:
+  url: sqlite:///nifty_options.db
+
+backfill:
+  start_date: 2024-01-01
+  end_date: 2024-12-31
+  skip_weekends: true
